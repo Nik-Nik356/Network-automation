@@ -17,12 +17,8 @@ Scripts
 What it does
 
 Prompts for username/password securely (getpass)
-
 Connects to each device in the IP list
-
-Runs the verification command
-
-Saves output to <IP>.txt
+Runs the verification command and saves output to <IP>.txt
 
 
 2) crypto_ssl_audit_with_exception.py (With Exception Handling)
@@ -30,8 +26,7 @@ Saves output to <IP>.txt
 What it does
 
 Same behaviour as the basic script
-
-The enhanced script ) includes exception handling to prevent the program from stopping if a device fails.
+The enhanced script includes exception handling to prevent the program from stopping if a device fails.
 It handles:
 NetmikoAuthenticationException – Incorrect credentials
 NetmikoTimeoutException / TimeoutError – Device unreachable or SSH blocked
@@ -40,3 +35,13 @@ Generic Exception – Any unexpected errors
 Examples of the error when you don't use an exception
 
 <img width="916" height="395" alt="image" src="https://github.com/user-attachments/assets/3705729a-f6db-4047-a204-bd0fdae5faa4" />
+
+3) devicedetails.py (Napalm -structured data)
+
+What it does
+
+Prompts for username/password securely (getpass)
+Connects to each device using NAPALM instead of Netmiko
+Retrieves structured device facts without parsing raw text
+Saves Hostname, Model, OS Version,  and Serial Number to a single device_facts.txt file (additional information like uptime or interface device details can be retrieved using the same method)
+   
