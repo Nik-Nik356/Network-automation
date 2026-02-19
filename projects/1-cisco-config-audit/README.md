@@ -37,4 +37,6 @@ NetmikoAuthenticationException – Incorrect credentials
 NetmikoTimeoutException / TimeoutError – Device unreachable or SSH blocked
 Generic Exception – Any unexpected errors
 
+Examples of the error when you don't use an exception
+
 <img width="916" height="395" alt="image" src="https://github.com/user-attachments/assets/3705729a-f6db-4047-a204-bd0fdae5faa4" />
